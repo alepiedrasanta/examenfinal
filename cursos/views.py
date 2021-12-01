@@ -14,4 +14,4 @@ def curso_nueva(request):
             messages.add_message(request, messages.SUCCESS, 'Pelicula Guardada Exitosamente')
     else:
         formulario = MateriaForm()
-    return render(request, 'curso/curso_nueva.html', {'formulario': formulario})
+    return render(request, 'cursos/curso_nueva.html', {'formulario': formulario})
